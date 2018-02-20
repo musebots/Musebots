@@ -1,0 +1,40 @@
+## version ##
+
+06.19.15
+
+## instrumentation ##
+
+A bot that generates beats with odd subdivisions.
+
+type:
+	@beats
+	@drums
+	@samplebased
+	@processed
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+creates its own form. Lots of (potentially extreme) signal processing.
+
+## messages ##
+
+sends: 
+
+	@hdensity - relative activity (# of onsets per measure).
+	@subdivision - current subdivision
+
+receives:
+
+	@exiting - will exit if told to do so by another musebot.
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (August 2016)

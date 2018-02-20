@@ -1,0 +1,5 @@
+id ae_MIDIanalyzerBOT
+mc_hostname localhost
+mc_listen_port 4747
+my_listen_port 7548
+output_channels 2

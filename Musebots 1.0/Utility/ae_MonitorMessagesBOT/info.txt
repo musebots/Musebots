@@ -1,0 +1,38 @@
+## name ##
+
+ae_MonitorMessagesBOT
+
+## version ##
+
+07.21.16
+
+## instrumentation ##
+
+utility bot that shows messages coming from & through the Conductor
+
+type:
+    @utility
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+none
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @everything
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (march 2015)

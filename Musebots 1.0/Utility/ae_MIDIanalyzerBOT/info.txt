@@ -1,0 +1,36 @@
+## name ##
+
+ae_MIDIanalyzerBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+type:
+    @none
+
+## platform ##
+
+Max standalone, built from Max 7.2.3 on Macintosh.
+
+## behaviour ##
+
+analyses an incoming MIDI stream for specific features. Allows redirecting features as musebot messages.
+
+## messages ##
+
+sends:
+    @anything
+
+receives:
+    @nothing
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (July 2016)

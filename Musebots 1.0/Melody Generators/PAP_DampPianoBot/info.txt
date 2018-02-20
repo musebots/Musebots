@@ -1,0 +1,42 @@
+## name ##
+
+PAP_DampPianoBot
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+type:
+    @melody
+    @synth
+
+## platform ##
+
+Max
+
+## messages ##
+
+sends:
+    @meter (length of each structural section)
+
+receives:
+    @density
+
+## behaviour ##
+
+internally generates:
+
+1. density (if no other bots are broadcasting density messages)
+2. structure
+3. meter (length of each structural section)
+4. rhythm
+
+sound source:
+
+pre-recorded piano samples
+
+## license ##
+
+## credits ##

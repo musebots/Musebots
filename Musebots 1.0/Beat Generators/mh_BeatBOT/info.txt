@@ -1,0 +1,40 @@
+## name ##
+
+mh_BeatBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+type:
+    @drums
+
+## platform ##
+
+Max standalone, built from Max 7.0.3
+
+## behaviour ##
+
+Plays sequenced drums sounds.
+Takes breaks sometimes.
+Breaks longer when less /activity.
+Beats busier when more /density.
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @hdensity
+    @vdensity
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+Matt Horrigan (May 2015)

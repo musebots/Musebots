@@ -1,0 +1,38 @@
+## name ##
+
+ae_ReassignMessagesBOT
+
+## version ##
+
+07.20.16
+
+## instrumentation ##
+
+utility bot that allows user to reassign messages
+
+type:
+    @utility
+
+## platform ##
+
+Max standalone, built from Max 6.1.10 on Macintosh.
+
+## behaviour ##
+
+none
+
+## messages ##
+
+sends:
+    @anything
+
+receives:
+    @anything
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (july 2016)

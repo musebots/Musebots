@@ -1,0 +1,109 @@
+{
+	"pattrstorage" : 	{
+		"name" : "Seq_presets",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"sequencer::ampA" : [ 2.0 ],
+					"sequencer::ampD" : [ 150.0 ],
+					"sequencer::ampS" : [ 50.0 ],
+					"sequencer::ampR" : [ 200.0 ],
+					"sequencer::filtA" : [ 2.0 ],
+					"sequencer::filtD" : [ 150.0 ],
+					"sequencer::filtS" : [ 192.0 ],
+					"sequencer::filtR" : [ 200.0 ],
+					"sequencer::keyFollow" : [ 100.0 ],
+					"sequencer::cutoff" : [ 24.0 ],
+					"sequencer::envelope" : [ 24.0 ],
+					"sequencer::reson" : [ 0.0 ],
+					"sequencer::portamento" : [ 0.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"sequencer::ampA" : [ 2.0 ],
+					"sequencer::ampD" : [ 150.0 ],
+					"sequencer::ampS" : [ 50.0 ],
+					"sequencer::ampR" : [ 200.0 ],
+					"sequencer::filtA" : [ 2.0 ],
+					"sequencer::filtD" : [ 150.0 ],
+					"sequencer::filtS" : [ 105.385818 ],
+					"sequencer::filtR" : [ 200.0 ],
+					"sequencer::keyFollow" : [ 77.952751 ],
+					"sequencer::cutoff" : [ 24.607159 ],
+					"sequencer::envelope" : [ 13.639253 ],
+					"sequencer::reson" : [ 49.172676 ],
+					"sequencer::portamento" : [ 0.0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"sequencer::ampA" : [ 0.0 ],
+					"sequencer::ampD" : [ 182.0 ],
+					"sequencer::ampS" : [ 50.0 ],
+					"sequencer::ampR" : [ 450.0 ],
+					"sequencer::filtA" : [ 0.0 ],
+					"sequencer::filtD" : [ 30.0 ],
+					"sequencer::filtS" : [ 70.0 ],
+					"sequencer::filtR" : [ 0.75 ],
+					"sequencer::keyFollow" : [ 100.0 ],
+					"sequencer::cutoff" : [ 24.0 ],
+					"sequencer::envelope" : [ 24.0 ],
+					"sequencer::reson" : [ 0.0 ],
+					"sequencer::portamento" : [ 0.0 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"sequencer::ampA" : [ 0.0 ],
+					"sequencer::ampD" : [ 182.0 ],
+					"sequencer::ampS" : [ 50.0 ],
+					"sequencer::ampR" : [ 450.0 ],
+					"sequencer::filtA" : [ 0.0 ],
+					"sequencer::filtD" : [ 30.0 ],
+					"sequencer::filtS" : [ 70.0 ],
+					"sequencer::filtR" : [ 0.75 ],
+					"sequencer::keyFollow" : [ 100.0 ],
+					"sequencer::cutoff" : [ -9.086889 ],
+					"sequencer::envelope" : [ 55.566029 ],
+					"sequencer::reson" : [ 57.0 ],
+					"sequencer::portamento" : [ 0.0 ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"data" : 				{
+					"sequencer::ampA" : [ 49.916553 ],
+					"sequencer::ampD" : [ 182.0 ],
+					"sequencer::ampS" : [ 50.0 ],
+					"sequencer::ampR" : [ 332.79126 ],
+					"sequencer::filtA" : [ 35.43306 ],
+					"sequencer::filtD" : [ 1.948142 ],
+					"sequencer::filtS" : [ 105.433037 ],
+					"sequencer::filtR" : [ 94.612823 ],
+					"sequencer::keyFollow" : [ 100.0 ],
+					"sequencer::cutoff" : [ 0.424492 ],
+					"sequencer::envelope" : [ 26.016928 ],
+					"sequencer::reson" : [ 57.0 ],
+					"sequencer::portamento" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,75 @@
+{
+	"pattrstorage" : 	{
+		"name" : "MethenyMelodyBOT_presets",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"melodicSynth::ampA" : [ 10.0 ],
+					"melodicSynth::ampD" : [ 1.9 ],
+					"melodicSynth::ampS" : [ 100.0 ],
+					"melodicSynth::ampR" : [ 12.0 ],
+					"melodicSynth::filtA" : [ 16.0 ],
+					"melodicSynth::filtD" : [ 77.0 ],
+					"melodicSynth::filtS" : [ 29.0 ],
+					"melodicSynth::filtR" : [ 14.0 ],
+					"melodicSynth::keyFollow" : [ 54.330757 ],
+					"melodicSynth::cutoff" : [ 23.625559 ],
+					"melodicSynth::envelope" : [ 0 ],
+					"melodicSynth::mode" : [ 0 ],
+					"melodicSynth::reson" : [ 43.307083 ],
+					"melodicSynth::portamento" : [ 0 ],
+					"melodicSynth::shape" : [ -11.023621 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"melodicSynth::ampA" : [ 18.301804 ],
+					"melodicSynth::ampD" : [ 1.9 ],
+					"melodicSynth::ampS" : [ 100.0 ],
+					"melodicSynth::ampR" : [ 4.412447 ],
+					"melodicSynth::filtA" : [ 21.117243 ],
+					"melodicSynth::filtD" : [ 39.484936 ],
+					"melodicSynth::filtS" : [ 16.401575 ],
+					"melodicSynth::filtR" : [ 14.0 ],
+					"melodicSynth::keyFollow" : [ 64.566978 ],
+					"melodicSynth::cutoff" : [ 29.637135 ],
+					"melodicSynth::envelope" : [ -3.495326 ],
+					"melodicSynth::mode" : [ 0 ],
+					"melodicSynth::reson" : [ 21.259838 ],
+					"melodicSynth::portamento" : [ 0.0 ],
+					"melodicSynth::shape" : [ -11.023621 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"melodicSynth::ampA" : [ 39.557411 ],
+					"melodicSynth::ampD" : [ 1.9 ],
+					"melodicSynth::ampS" : [ 47.244095 ],
+					"melodicSynth::ampR" : [ 4.412447 ],
+					"melodicSynth::filtA" : [ 27.467299 ],
+					"melodicSynth::filtD" : [ 104.274094 ],
+					"melodicSynth::filtS" : [ 16.401575 ],
+					"melodicSynth::filtR" : [ 14.0 ],
+					"melodicSynth::keyFollow" : [ 80.31501 ],
+					"melodicSynth::cutoff" : [ 17.458149 ],
+					"melodicSynth::envelope" : [ -3.495326 ],
+					"melodicSynth::mode" : [ 0 ],
+					"melodicSynth::reson" : [ 59.055115 ],
+					"melodicSynth::portamento" : [ 0.031738 ],
+					"melodicSynth::shape" : [ 17.322836 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

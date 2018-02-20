@@ -1,0 +1,1 @@
+rehearsals, 26;1, Josh-ASCC-phrases.txt;2, Josh-ASCC-models.txt;3, Josh-ASCC-model-phrases.txt;4, Josh-ASCC-model-silences.txt;5, Josh-ASCC-stats.txt;6, Josh-ASCC-audiofiles.txt;7, -40.;8, -52.222221;9, 1000.;10, 2.;11, 4000.;12, Josh-ASCC-phrases-disabled.txt;

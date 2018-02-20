@@ -1,0 +1,45 @@
+## name ##
+
+ae_xPercBOT
+
+## version ##
+
+06.12.15
+
+## instrumentation ##
+
+three part percussion, with modulated filter and delay, for "x" ensemble
+
+type:
+    @percussion
+    @x
+    @set
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+algorithmic generation of three percussion patterns. Requires xProducerBOT to function
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @onoff (to start and stop playing);
+    @initialize (to generate its initial pattern);
+    @density (to mask onsets);
+    @section (to store and recall state information);
+    @subpattern (to subdivide eight bar pattern into internal repetitions;
+    @exiting (to quit once xProducerBOT is done).
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (January 2015)

@@ -1,0 +1,40 @@
+## name ##
+
+ae_BowedBOT
+
+## version ##
+
+07.07.15
+
+## instrumentation ##
+
+Generates chordal texture using bowed guitar and vibraphone samples.
+
+type:
+    @keys
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+Aligns with tala, selecting pitches from notepool. Reacts to density.
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @notepool;
+    @tala (additive rhythm of 2 & 3);
+    @exiting (will exit when it receives exiting message).
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (June 2015)

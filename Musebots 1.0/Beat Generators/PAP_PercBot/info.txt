@@ -1,0 +1,44 @@
+## name ##
+
+PAP_PercBot
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+beat percussion synth
+
+type:
+    @beat
+
+## platform ##
+
+Max standalone, built on Macintosh.
+
+## behaviour ##
+
+internally generates:
+
+internally generates:
+
+1. density (if no other bots are broadcasting density messages)
+2. rhythm
+
+sound source:
+
+internal synthesis
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @density
+    @exiting
+
+## license ##
+
+## credits ##

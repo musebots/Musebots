@@ -1,0 +1,39 @@
+## name ##
+
+ae_AtmosphereBOT
+
+## version ##
+
+05.20.16
+
+## instrumentation ##
+
+type:
+    @texture
+    @soundscape
+    @resonant
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+Generates atmospheric texture by resonating soundscape recordings
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @notepool (will play lowest note);
+    @exiting (will exit when it receives exiting message).
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (December 2015)

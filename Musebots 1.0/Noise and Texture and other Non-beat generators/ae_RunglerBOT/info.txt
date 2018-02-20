@@ -1,0 +1,38 @@
+## name ##
+
+ae_RunglerBOT
+
+## version ##
+
+07.20.16
+
+## instrumentation ##
+
+type:
+    @synth
+    @noise
+
+## platform ##
+
+Max standalone, built from Max 7.2.3 on Macintosh.
+
+## behaviour ##
+
+whacky modulations using jvkr’s rungler synth
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @valence - higher valence causes less dramatic shifts
+    @arousal - higher arousal cause more frequent changes
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (july 2016)

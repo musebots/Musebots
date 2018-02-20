@@ -1,0 +1,43 @@
+## name ##
+
+mh_WindBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+noise, subtractive
+
+type:
+    @noise
+
+## platform ##
+
+Max standalone, built from Max 7.2.3 on Mac
+
+If using source files, this bot requires the following Max package to be installed:
+
+    Zsa.descriptors
+    http://www.e--j.com/index.php/download-zsa/
+
+## behaviour ##
+
+makes wind noise of varying textures
+
+## messages ##
+
+sends:
+    @centroid (freq)
+
+receives:
+    @hdensity
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+matt horrigan (June 2016)

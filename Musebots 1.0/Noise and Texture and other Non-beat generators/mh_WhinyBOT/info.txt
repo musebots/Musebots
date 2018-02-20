@@ -1,0 +1,48 @@
+## name ##
+
+mh_WhinyBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+polyphonic additive
+
+type:
+    @synth
+    @noise
+
+## platform ##
+
+Max standalone, built from Max 7.2.3 on Mac
+
+If using source files, this bot requires the following Max package to be installed:
+
+    Zsa.descriptors
+    http://www.e--j.com/index.php/download-zsa/
+
+## behaviour ##
+
+clusters of sine tones around a fundamental and its partials transposed to within the same octave
+
+## messages ##
+
+sends:
+    @valence
+    @arousal
+
+receives:
+    @notepool
+    @hdensity
+    @arousal
+    @valence
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+matt horrigan (May 2016)

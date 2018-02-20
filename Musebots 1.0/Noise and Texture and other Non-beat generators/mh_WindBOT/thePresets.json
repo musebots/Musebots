@@ -1,0 +1,65 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u729000380",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"curve1" : [ 0.92 ],
+					"curve2" : [ 0.92 ],
+					"speedDivider1" : [ 2.0 ],
+					"fundamental1" : [  ],
+					"fundamental2" : [  ],
+					"fm1" : [  ],
+					"fm2" : [  ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"curve1" : [ 0.3 ],
+					"curve2" : [ 0.2 ],
+					"speedDivider1" : [ 11.0 ],
+					"fundamental1" : [  ],
+					"fundamental2" : [  ],
+					"fm1" : [  ],
+					"fm2" : [  ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"curve1" : [  ],
+					"curve2" : [  ],
+					"speedDivider1" : [  ],
+					"fundamental1" : [ 20 ],
+					"fundamental2" : [ 21 ],
+					"fm1" : [ 22 ],
+					"fm2" : [ 24 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"curve1" : [  ],
+					"curve2" : [  ],
+					"speedDivider1" : [  ],
+					"fundamental1" : [ 5000 ],
+					"fundamental2" : [ 4500 ],
+					"fm1" : [ 200 ],
+					"fm2" : [ 300 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,5 @@
+id ae_SampleBeatBOT
+mc_hostname localhost
+mc_listen_port 4747
+my_listen_port 7488
+output_channels 2

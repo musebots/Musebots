@@ -1,0 +1,38 @@
+## name ##
+
+ae_VinylBOT
+
+## version ##
+
+12.01.15
+
+## instrumentation ##
+
+type:
+    @noise
+    @texture
+    @vinylrecord
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+A bot that makes a background sound of vinyl recording noise
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @nothing
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (December 2015)

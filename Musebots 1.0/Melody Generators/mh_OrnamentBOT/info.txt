@@ -1,0 +1,41 @@
+## name ##
+
+mh_OrnamentBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+mono synth, very simple (medium high range)
+
+type:
+    @melody
+    @synth
+
+## platform ##
+
+Max standalone, built from Max 7.0.4 on Macintosh.
+
+## behaviour ##
+
+makes sequences of notes that use a variety of tuplet ratios
+
+## messages ##
+
+sends:
+    @notepool
+    @hdensity
+
+receives:
+    @notepool
+    @hdensity
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+matt horrigan (June 2015)

@@ -1,0 +1,8 @@
+# Add all the hosts that you want in your musebot network here.
+# Use the format <hostname> <username> <abs_path>, elements separated by single spaces, one host per line. You can use double quotes around <abs_path> if the path has spaces in it.
+# hostname: the network hostname, if using bonjour this might look like doohdah.local
+# username: the username for logging onto this machine. Make sure you have passwordless ssh access (google passwordless ssh access)
+# abs_path: absolute path to the folder containing your musebots on that host, e.g., /Users/user/Documents/Musebots. Use double quotes if you want to use paths with spaces in the name.
+
+# Example:
+# boing.local ollie "/Users/ollie/Desktop/A Folder With Spaces/Musebots"

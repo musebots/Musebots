@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Musebot Conductor Makejar" default="main" basedir=".">
+    
+	<description>
+		Java Musebot Conductor
+	</description>
+    
+	<!-- Working directory  
+		This file lives in scripts so we specify the parent dir as the working dir.
+	-->
+	<property name="work" value=".." />  
+	
+	<!-- Build directory -->
+	<property name="build" value="${work}/build" />  
+	<!-- Library directory -->
+	<property name="libs" value="${work}/libs" /> 
+	<!-- Bin directory -->
+	<property name="bin" value="${work}/bin" />  
+    
+	<target name="main" description="create the jar" depends="makejar"> 
+	</target>
+	
+	<!-- 
+	Compile everything down to one jar.
+	 -->
+	<target name ="makejar" description="Create a jar for the beads musebot example project">
+	    <mkdir dir="${build}" />
+		<jar jarfile="${build}/musebot-conductor.jar">
+		    <fileset dir="${bin}" includes="**/*.class" />
+		    <zipgroupfileset dir="${libs}" includes="**/*.jar" />
+		</jar>
+	</target>
+  
+</project>

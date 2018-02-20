@@ -1,0 +1,43 @@
+## name ##
+
+mh_DroneBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+ugly wubwubs drone pad
+
+type:
+    @noise
+
+## platform ##
+
+Max standalone, built from Max 7.0.3
+
+## behaviour ##
+
+Makes nasty drony sounds.
+Takes breaks sometimes.
+More breaks when less /activity.
+Faster tremolo when more /density.
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @notepool
+    @hdensity
+    @vdensity
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+Matt Horrigan (May 2015)

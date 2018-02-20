@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "X.FM">
+	<slot number = "1">
+		<pattr name = "preset-name" value = "Default" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "sine" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "1." />
+		<pattr name = "harm-lfo-freq" value = "0." />
+		<pattr name = "harm-lfo-range" value = "0." />
+		<pattr name = "harm-lfo-wave" value = "sine" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0." />
+		<pattr name = "mod-depth" value = "1." />
+		<pattr name = "mod-lfo-freq" value = "0." />
+		<pattr name = "mod-lfo-range" value = "0." />
+		<pattr name = "mod-lfo-wave" value = "sine" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0." />
+		<pattr name = "shift-depth" value = "0." />
+		<pattr name = "shift-lfo-freq" value = "0." />
+		<pattr name = "shift-lfo-range" value = "0." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0." />
+		<pattr name = "vib-depth" value = "1." />
+		<pattr name = "vib-lfo-freq" value = "0." />
+		<pattr name = "vib-lfo-range" value = "0." />
+		<pattr name = "vib-lfo-wave" value = "sine" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "0." />
+		<pattr name = "amp-lfo-range" value = "0." />
+		<pattr name = "amp-lfo-wave" value = "sine" />
+		<pattr name = "adsr-attack" value = "50" />
+		<pattr name = "adsr-decay" value = "0" />
+		<pattr name = "adsr-sustain" value = "1." />
+		<pattr name = "adsr-release" value = "1000" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "2">
+		<pattr name = "preset-name" value = "tqoiuoooooi" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "sine" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "8." />
+		<pattr name = "harm-lfo-freq" value = "0." />
+		<pattr name = "harm-lfo-range" value = "0." />
+		<pattr name = "harm-lfo-wave" value = "sine" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0. 0. 10. 0.86 440. 0.32 320. 0.61 100. 0.21 130." />
+		<pattr name = "mod-depth" value = "1." />
+		<pattr name = "mod-lfo-freq" value = "0." />
+		<pattr name = "mod-lfo-range" value = "0." />
+		<pattr name = "mod-lfo-wave" value = "sine" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0. 0. 10. 0.86 440. 0.32 320. 0.61 100. 0.21 130." />
+		<pattr name = "shift-depth" value = "0." />
+		<pattr name = "shift-lfo-freq" value = "0." />
+		<pattr name = "shift-lfo-range" value = "0." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0. 0. 10. 0.86 440. 0.32 320. 0.61 100. 0.21 130." />
+		<pattr name = "vib-depth" value = "105." />
+		<pattr name = "vib-lfo-freq" value = "33." />
+		<pattr name = "vib-lfo-range" value = "7." />
+		<pattr name = "vib-lfo-wave" value = "sine" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0. 0. 10. 0.86 440. 0.32 320. 0.61 100. 0.21 130." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "0." />
+		<pattr name = "amp-lfo-range" value = "0." />
+		<pattr name = "amp-lfo-wave" value = "sine" />
+		<pattr name = "adsr-attack" value = "0" />
+		<pattr name = "adsr-decay" value = "1000" />
+		<pattr name = "adsr-sustain" value = "0.3" />
+		<pattr name = "adsr-release" value = "1000" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "3">
+		<pattr name = "preset-name" value = "dwaoaaannnnng" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "tri" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "1." />
+		<pattr name = "harm-lfo-freq" value = "0." />
+		<pattr name = "harm-lfo-range" value = "0." />
+		<pattr name = "harm-lfo-wave" value = "sine" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0. 0. 510. 0.98 490." />
+		<pattr name = "mod-depth" value = "2." />
+		<pattr name = "mod-lfo-freq" value = "0." />
+		<pattr name = "mod-lfo-range" value = "0." />
+		<pattr name = "mod-lfo-wave" value = "saw+" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0." />
+		<pattr name = "shift-depth" value = "45." />
+		<pattr name = "shift-lfo-freq" value = "0." />
+		<pattr name = "shift-lfo-range" value = "0." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0." />
+		<pattr name = "vib-depth" value = "2." />
+		<pattr name = "vib-lfo-freq" value = "0." />
+		<pattr name = "vib-lfo-range" value = "0." />
+		<pattr name = "vib-lfo-wave" value = "sine" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "0." />
+		<pattr name = "amp-lfo-range" value = "0." />
+		<pattr name = "amp-lfo-wave" value = "sine" />
+		<pattr name = "adsr-attack" value = "1" />
+		<pattr name = "adsr-decay" value = "1000" />
+		<pattr name = "adsr-sustain" value = "0.3" />
+		<pattr name = "adsr-release" value = "5000" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "4">
+		<pattr name = "preset-name" value = "djoongtiitonooontilt" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "tri" />
+		<pattr name = "mod-wave" value = "tri" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "12." />
+		<pattr name = "harm-lfo-freq" value = "0." />
+		<pattr name = "harm-lfo-range" value = "36." />
+		<pattr name = "harm-lfo-wave" value = "noise" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0." />
+		<pattr name = "mod-depth" value = "9." />
+		<pattr name = "mod-lfo-freq" value = "1." />
+		<pattr name = "mod-lfo-range" value = "6." />
+		<pattr name = "mod-lfo-wave" value = "saw-" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0." />
+		<pattr name = "shift-depth" value = "4." />
+		<pattr name = "shift-lfo-freq" value = "0." />
+		<pattr name = "shift-lfo-range" value = "0." />
+		<pattr name = "shift-lfo-wave" value = "saw-" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0." />
+		<pattr name = "vib-depth" value = "1." />
+		<pattr name = "vib-lfo-freq" value = "3." />
+		<pattr name = "vib-lfo-range" value = "4." />
+		<pattr name = "vib-lfo-wave" value = "sine" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "0." />
+		<pattr name = "amp-lfo-range" value = "0." />
+		<pattr name = "amp-lfo-wave" value = "sine" />
+		<pattr name = "adsr-attack" value = "1" />
+		<pattr name = "adsr-decay" value = "1000" />
+		<pattr name = "adsr-sustain" value = "0.3" />
+		<pattr name = "adsr-release" value = "5000" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "5">
+		<pattr name = "preset-name" value = "tuoooouuuttttuuu" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "sine" />
+		<pattr name = "mod-wave" value = "pulse" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0. 0. 1000." />
+		<pattr name = "harm-depth" value = "6." />
+		<pattr name = "harm-lfo-freq" value = "9." />
+		<pattr name = "harm-lfo-range" value = "3." />
+		<pattr name = "harm-lfo-wave" value = "tri" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0. 0.23 75. 0.83 155. 0.97 120. 0.87 265. 0.5 130. 0.1 255." />
+		<pattr name = "mod-depth" value = "1." />
+		<pattr name = "mod-lfo-freq" value = "2." />
+		<pattr name = "mod-lfo-range" value = "1." />
+		<pattr name = "mod-lfo-wave" value = "pulse" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0. 0.56 105. 0.83 20. 0.95 285. 0.88 280. 0.43 45. 0.69 5. 0.18 125. 0.07 100." />
+		<pattr name = "shift-depth" value = "6." />
+		<pattr name = "shift-lfo-freq" value = "6." />
+		<pattr name = "shift-lfo-range" value = "3." />
+		<pattr name = "shift-lfo-wave" value = "tri" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0. 0.91 260. 0.81 40. 1. 245. 0.81 250. 0.63 70. 0.33 55. 0.26 25." />
+		<pattr name = "vib-depth" value = "4." />
+		<pattr name = "vib-lfo-freq" value = "0." />
+		<pattr name = "vib-lfo-range" value = "5." />
+		<pattr name = "vib-lfo-wave" value = "square" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0. 0.81 150. 0.86 220. 0.92 175. 0.73 140. 0.56 110. 0.31 120." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "1." />
+		<pattr name = "amp-lfo-range" value = "1." />
+		<pattr name = "amp-lfo-wave" value = "pulse" />
+		<pattr name = "adsr-attack" value = "1" />
+		<pattr name = "adsr-decay" value = "1000" />
+		<pattr name = "adsr-sustain" value = "1." />
+		<pattr name = "adsr-release" value = "250" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "6">
+		<pattr name = "preset-name" value = "ttiawoahaanngggg" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "tri" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "1." />
+		<pattr name = "harm-lfo-freq" value = "0." />
+		<pattr name = "harm-lfo-range" value = "0." />
+		<pattr name = "harm-lfo-wave" value = "sine" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0. 0. 350. 1. 330. 0. 320." />
+		<pattr name = "mod-depth" value = "8." />
+		<pattr name = "mod-lfo-freq" value = "0." />
+		<pattr name = "mod-lfo-range" value = "0." />
+		<pattr name = "mod-lfo-wave" value = "saw+" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0." />
+		<pattr name = "shift-depth" value = "45." />
+		<pattr name = "shift-lfo-freq" value = "0." />
+		<pattr name = "shift-lfo-range" value = "0." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0." />
+		<pattr name = "vib-depth" value = "2." />
+		<pattr name = "vib-lfo-freq" value = "37." />
+		<pattr name = "vib-lfo-range" value = "9." />
+		<pattr name = "vib-lfo-wave" value = "sine" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "136." />
+		<pattr name = "amp-lfo-range" value = "1." />
+		<pattr name = "amp-lfo-wave" value = "pulse" />
+		<pattr name = "adsr-attack" value = "1" />
+		<pattr name = "adsr-decay" value = "1000" />
+		<pattr name = "adsr-sustain" value = "0.3" />
+		<pattr name = "adsr-release" value = "5000" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "7">
+		<pattr name = "preset-name" value = "rrruuuzwiiipppiuiuiu" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "sine" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "4687" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "0.7 0. 0.6 937.4 0.6 937.4 0.1 1874.8 0.5 937.4" />
+		<pattr name = "harm-depth" value = "16." />
+		<pattr name = "harm-lfo-freq" value = "1." />
+		<pattr name = "harm-lfo-range" value = "64." />
+		<pattr name = "harm-lfo-wave" value = "saw+" />
+		<pattr name = "mod-env-time" value = "4687" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0." />
+		<pattr name = "mod-depth" value = "1." />
+		<pattr name = "mod-lfo-freq" value = "1." />
+		<pattr name = "mod-lfo-range" value = "1." />
+		<pattr name = "mod-lfo-wave" value = "sine" />
+		<pattr name = "shift-env-time" value = "4687" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "0.7 0. 0.9 781.166687 0.9 1562.333252 0.7 781.166748 0.4 1562.333252" />
+		<pattr name = "shift-depth" value = "32." />
+		<pattr name = "shift-lfo-freq" value = "32." />
+		<pattr name = "shift-lfo-range" value = "1." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "4687" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "0.9 0. 0.4 2000. 0.9 62. 0.9 1000. 0.9 125. 0.9 500. 0.2 1000." />
+		<pattr name = "vib-depth" value = "1." />
+		<pattr name = "vib-lfo-freq" value = "16." />
+		<pattr name = "vib-lfo-range" value = "1." />
+		<pattr name = "vib-lfo-wave" value = "square" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0. 0.81 150. 0.86 220. 0.92 175. 0.73 140. 0.56 110. 0.31 120." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "32." />
+		<pattr name = "amp-lfo-range" value = "1." />
+		<pattr name = "amp-lfo-wave" value = "saw+" />
+		<pattr name = "adsr-attack" value = "1" />
+		<pattr name = "adsr-decay" value = "250" />
+		<pattr name = "adsr-sustain" value = "1." />
+		<pattr name = "adsr-release" value = "31" />
+		<pattr name = "rev-size" value = "20" />
+		<pattr name = "rev-decay" value = "40" />
+		<pattr name = "rev-damp" value = "10" />
+		<pattr name = "rev-diff" value = "20" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "8">
+		<pattr name = "preset-name" value = "twoorrurr.....rrrrrr" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "sine" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "8." />
+		<pattr name = "harm-lfo-freq" value = "0." />
+		<pattr name = "harm-lfo-range" value = "0." />
+		<pattr name = "harm-lfo-wave" value = "sine" />
+		<pattr name = "mod-env-time" value = "10000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0. 0. 100. 1. 100. 0. 100. 1. 100. 0. 100. 1. 100. 0. 100. 0.86 3800. 0. 100. 0.88 150. 0. 100. 0.86 150. 0. 100. 0.86 150. 0. 100. 0.86 100. 0. 100. 0.85 1850. 0.32 300. 0.61 1000. 0.21 1300." />
+		<pattr name = "mod-depth" value = "10." />
+		<pattr name = "mod-lfo-freq" value = "0." />
+		<pattr name = "mod-lfo-range" value = "0." />
+		<pattr name = "mod-lfo-wave" value = "sine" />
+		<pattr name = "shift-env-time" value = "10000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0. 0. 100. 0.86 4400. 0.32 3200. 0.61 1000. 0.21 1300." />
+		<pattr name = "shift-depth" value = "0." />
+		<pattr name = "shift-lfo-freq" value = "0." />
+		<pattr name = "shift-lfo-range" value = "0." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "10000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0. 0. 100. 0.86 4400. 0.32 3200. 0.61 1000. 0.21 1300." />
+		<pattr name = "vib-depth" value = "105." />
+		<pattr name = "vib-lfo-freq" value = "33." />
+		<pattr name = "vib-lfo-range" value = "7." />
+		<pattr name = "vib-lfo-wave" value = "sine" />
+		<pattr name = "amp-env-time" value = "2000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0. 0. 20. 0. 40. 1. 210. 0. 20. 1. 20. 0. 20. 1. 20. 0. 20. 1. 20. 0. 20. 1. 20. 0. 20. 1. 20. 0. 20. 1. 20. 0. 20. 1. 20. 0. 20. 0.86 330. 0.32 640. 0.61 200. 0.21 260." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "0." />
+		<pattr name = "amp-lfo-range" value = "0." />
+		<pattr name = "amp-lfo-wave" value = "sine" />
+		<pattr name = "adsr-attack" value = "0" />
+		<pattr name = "adsr-decay" value = "1000" />
+		<pattr name = "adsr-sustain" value = "0.3" />
+		<pattr name = "adsr-release" value = "1000" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "9">
+		<pattr name = "preset-name" value = "tshwoeiiwoeiwoeirrrrrr" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "sine" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "6." />
+		<pattr name = "harm-lfo-freq" value = "0." />
+		<pattr name = "harm-lfo-range" value = "0." />
+		<pattr name = "harm-lfo-wave" value = "sine" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0. 0. 10. 1. 270. 0. 40. 1. 210. 0. 155. 1. 150. 0. 165." />
+		<pattr name = "mod-depth" value = "8." />
+		<pattr name = "mod-lfo-freq" value = "0." />
+		<pattr name = "mod-lfo-range" value = "0." />
+		<pattr name = "mod-lfo-wave" value = "saw+" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0." />
+		<pattr name = "shift-depth" value = "45." />
+		<pattr name = "shift-lfo-freq" value = "0." />
+		<pattr name = "shift-lfo-range" value = "0." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0." />
+		<pattr name = "vib-depth" value = "2." />
+		<pattr name = "vib-lfo-freq" value = "0.4" />
+		<pattr name = "vib-lfo-range" value = "23." />
+		<pattr name = "vib-lfo-wave" value = "noise" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0." />
+		<pattr name = "amp-depth" value = "1." />
+		<pattr name = "amp-lfo-freq" value = "136." />
+		<pattr name = "amp-lfo-range" value = "1." />
+		<pattr name = "amp-lfo-wave" value = "pulse" />
+		<pattr name = "adsr-attack" value = "1" />
+		<pattr name = "adsr-decay" value = "1000" />
+		<pattr name = "adsr-sustain" value = "0.3" />
+		<pattr name = "adsr-release" value = "5000" />
+		<pattr name = "rev-size" value = "64" />
+		<pattr name = "rev-decay" value = "64" />
+		<pattr name = "rev-damp" value = "64" />
+		<pattr name = "rev-diff" value = "64" />
+		<pattr name = "rev-gain" value = "0." />
+	</slot>
+	<slot number = "10">
+		<pattr name = "preset-name" value = "+bzzzzzzt+" />
+		<pattr name = "gain" value = "0." />
+		<pattr name = "carrier-wave" value = "saw+" />
+		<pattr name = "mod-wave" value = "sine" />
+		<pattr name = "harm-env-time" value = "1000" />
+		<pattr name = "harm-env-min" value = "0." />
+		<pattr name = "harm-env-max" value = "1." />
+		<pattr name = "harm-env" value = "1. 0." />
+		<pattr name = "harm-depth" value = "64." />
+		<pattr name = "harm-lfo-freq" value = "16." />
+		<pattr name = "harm-lfo-range" value = "32." />
+		<pattr name = "harm-lfo-wave" value = "pulse" />
+		<pattr name = "mod-env-time" value = "1000" />
+		<pattr name = "mod-env-min" value = "0." />
+		<pattr name = "mod-env-max" value = "1." />
+		<pattr name = "mod-env" value = "1. 0." />
+		<pattr name = "mod-depth" value = "64." />
+		<pattr name = "mod-lfo-freq" value = "2." />
+		<pattr name = "mod-lfo-range" value = "64." />
+		<pattr name = "mod-lfo-wave" value = "noise" />
+		<pattr name = "shift-env-time" value = "1000" />
+		<pattr name = "shift-env-min" value = "0." />
+		<pattr name = "shift-env-max" value = "1." />
+		<pattr name = "shift-env" value = "1. 0." />
+		<pattr name = "shift-depth" value = "1." />
+		<pattr name = "shift-lfo-freq" value = "4." />
+		<pattr name = "shift-lfo-range" value = "16." />
+		<pattr name = "shift-lfo-wave" value = "sine" />
+		<pattr name = "vib-env-time" value = "1000" />
+		<pattr name = "vib-env-min" value = "0." />
+		<pattr name = "vib-env-max" value = "1." />
+		<pattr name = "vib-env" value = "1. 0." />
+		<pattr name = "vib-depth" value = "16." />
+		<pattr name = "vib-lfo-freq" value = "64." />
+		<pattr name = "vib-lfo-range" value = "8." />
+		<pattr name = "vib-lfo-wave" value = "noise" />
+		<pattr name = "amp-env-time" value = "1000" />
+		<pattr name = "amp-env-min" value = "0." />
+		<pattr name = "amp-env-max" value = "1." />
+		<pattr name = "amp-env" value = "1. 0." />
+		<pattr name = "amp-depth" value = "3." />
+		<pattr name = "amp-lfo-freq" value = "0.5" />
+		<pattr name = "amp-lfo-range" value = "0." />
+		<pattr name = "amp-lfo-wave" value = "square" />
+		<pattr name = "adsr-attack" value = "0" />
+		<pattr name = "adsr-decay" value = "100" />
+		<pattr name = "adsr-sustain" value = "0.22" />
+		<pattr name = "adsr-release" value = "0" />
+		<pattr name = "rev-size" value = "80" />
+		<pattr name = "rev-decay" value = "90" />
+		<pattr name = "rev-damp" value = "40" />
+		<pattr name = "rev-diff" value = "110" />
+		<pattr name = "rev-gain" value = "-127." />
+	</slot>
+</pattrstorage>
+

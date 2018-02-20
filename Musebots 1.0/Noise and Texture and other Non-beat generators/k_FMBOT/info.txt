@@ -1,0 +1,36 @@
+## name ##
+
+k_FMBOT
+
+## version ##
+
+0.01
+
+## instrumentation ##
+
+type:
+    @texture
+
+## platform ##
+
+MaxMSP
+
+## behaviour ##
+
+Implement FM and AM with ramp functions on parameters. It sounds more like an effect. It does not play melodies. It has complimentary behaviour, plays more (less) if others play less (more)
+
+## messages ##
+
+sends:
+    @unknown
+
+receives:
+    @unknown
+
+## license ##
+
+Use at your own risk.
+
+## credits ##
+
+Kıvanç Tatar

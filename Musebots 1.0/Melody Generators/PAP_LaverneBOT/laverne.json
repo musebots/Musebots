@@ -1,0 +1,164 @@
+{
+	"pattrstorage" : 	{
+		"name" : "laverne[1]",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"Attack" : [ 43.0 ],
+					"Decay" : [ 97.0 ],
+					"Release" : [ 136.0 ],
+					"Sustain" : [ 100.0 ],
+					"VelMod" : [ 66.0 ],
+					"filter_attack" : [ 60.0 ],
+					"filter_cutoff" : [ 1250.0 ],
+					"filter_decay" : [ 19.0 ],
+					"filter_envelope_amount" : [ 1.0 ],
+					"filter_release" : [ 139.0 ],
+					"filter_resonance" : [ 0.94 ],
+					"filter_sustain" : [ 100.0 ],
+					"filter_tracking" : [ -19.0 ],
+					"filter_velocity" : [ 0.0 ],
+					"global_tune" : [ 0.0 ],
+					"level" : [ 0.0 ],
+					"osc1_level" : [ 100.0 ],
+					"osc1_octave" : [ -1.0 ],
+					"osc1_waveform" : [ 2.0 ],
+					"osc2_level" : [ 14.0 ],
+					"osc2_octave" : [ 1.0 ],
+					"osc2_tune" : [ 21.0 ],
+					"osc2_waveform" : [ 0.0 ],
+					"polyphony" : [ 4.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"Attack" : [ 1.0 ],
+					"Decay" : [ 74.0 ],
+					"Release" : [ 385.0 ],
+					"Sustain" : [ 58.0 ],
+					"VelMod" : [ 33.0 ],
+					"filter_attack" : [ 1.0 ],
+					"filter_cutoff" : [ 1950.0 ],
+					"filter_decay" : [ 139.0 ],
+					"filter_envelope_amount" : [ 100.0 ],
+					"filter_release" : [ 269.0 ],
+					"filter_resonance" : [ 0.6 ],
+					"filter_sustain" : [ 39.0 ],
+					"filter_tracking" : [ 37.799999 ],
+					"filter_velocity" : [ 50.0 ],
+					"global_tune" : [ 0.0 ],
+					"level" : [ 0.0 ],
+					"osc1_level" : [ 100.0 ],
+					"osc1_octave" : [ -1.0 ],
+					"osc1_waveform" : [ 0.0 ],
+					"osc2_level" : [ 100.0 ],
+					"osc2_octave" : [ 5.0 ],
+					"osc2_tune" : [ 8.0 ],
+					"osc2_waveform" : [ 3.0 ],
+					"polyphony" : [ 4.0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"Attack" : [ 8.0 ],
+					"Decay" : [ 123.0 ],
+					"Release" : [ 299.0 ],
+					"Sustain" : [ 39.0 ],
+					"VelMod" : [ 33.0 ],
+					"filter_attack" : [ 1.0 ],
+					"filter_cutoff" : [ 1820.0 ],
+					"filter_decay" : [ 102.0 ],
+					"filter_envelope_amount" : [ 100.0 ],
+					"filter_release" : [ 139.0 ],
+					"filter_resonance" : [ 0.53 ],
+					"filter_sustain" : [ 66.0 ],
+					"filter_tracking" : [ 7.04 ],
+					"filter_velocity" : [ 50.0 ],
+					"global_tune" : [ 0.0 ],
+					"level" : [ 0.0 ],
+					"osc1_level" : [ 100.0 ],
+					"osc1_octave" : [ 0.0 ],
+					"osc1_waveform" : [ 1.0 ],
+					"osc2_level" : [ 100.0 ],
+					"osc2_octave" : [ 0.0 ],
+					"osc2_tune" : [ 689.0 ],
+					"osc2_waveform" : [ 1.0 ],
+					"polyphony" : [ 4.0 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"Attack" : [ 3.0 ],
+					"Decay" : [ 74.0 ],
+					"Release" : [ 385.0 ],
+					"Sustain" : [ 100.0 ],
+					"VelMod" : [ 5.0 ],
+					"filter_attack" : [ 102.0 ],
+					"filter_cutoff" : [ 1950.0 ],
+					"filter_decay" : [ 139.0 ],
+					"filter_envelope_amount" : [ 48.099998 ],
+					"filter_release" : [ 1650.0 ],
+					"filter_resonance" : [ 0.97 ],
+					"filter_sustain" : [ 100.0 ],
+					"filter_tracking" : [ 0.0 ],
+					"filter_velocity" : [ 64.099998 ],
+					"global_tune" : [ 0.0 ],
+					"level" : [ 0.0 ],
+					"osc1_level" : [ 100.0 ],
+					"osc1_octave" : [ 0.0 ],
+					"osc1_waveform" : [ 0.0 ],
+					"osc2_level" : [ 100.0 ],
+					"osc2_octave" : [ 0.0 ],
+					"osc2_tune" : [ 8.0 ],
+					"osc2_waveform" : [ 2.0 ],
+					"polyphony" : [ 4.0 ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"data" : 				{
+					"Attack" : [ 1.0 ],
+					"Decay" : [ 97.0 ],
+					"Release" : [ 136.0 ],
+					"Sustain" : [ 0.0 ],
+					"VelMod" : [ 66.0 ],
+					"filter_attack" : [ 1.0 ],
+					"filter_cutoff" : [ 6000.0 ],
+					"filter_decay" : [ 19.0 ],
+					"filter_envelope_amount" : [ 1.0 ],
+					"filter_release" : [ 139.0 ],
+					"filter_resonance" : [ 0.92 ],
+					"filter_sustain" : [ 40.0 ],
+					"filter_tracking" : [ -26.0 ],
+					"filter_velocity" : [ 100.0 ],
+					"global_tune" : [ 0.0 ],
+					"level" : [ -12.0 ],
+					"osc1_level" : [ 54.0 ],
+					"osc1_octave" : [ 0.0 ],
+					"osc1_waveform" : [ 3.0 ],
+					"osc2_level" : [ 100.0 ],
+					"osc2_octave" : [ 3.0 ],
+					"osc2_tune" : [ 13.0 ],
+					"osc2_waveform" : [ 1.0 ],
+					"polyphony" : [ 4.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

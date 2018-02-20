@@ -1,0 +1,5 @@
+id PAP_LaverneBOT
+mc_hostname localhost
+mc_listen_port 4747
+my_listen_port 7527
+output_channels 2

@@ -1,0 +1,32 @@
+## name ##
+
+PAP_LaverneBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+M4L_LaverneBOT
+
+type:
+    @melody
+
+## platform ##
+
+Max standalone, built on Macintosh.
+
+## behaviour ##
+
+## messages ##
+
+sends:
+    @unknown
+
+receives:
+    @unknown
+
+## license ##
+
+## credits ##

@@ -1,0 +1,45 @@
+## name ##
+
+ae_Seasons_Chord
+
+## version ##
+
+07.10.16
+
+## instrumentation ##
+
+Plays chords of either bowed vibraphone or bowed guitar samples.
+
+type:
+    @chords
+    @seasons
+    @set
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+A musebot from the installation "Seasons".
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @progress - progress (0.-1.) through current phrase
+    @arousal - equivalent to hdensity
+    @tala - current rhythmic grouping
+    @plan/chords - chord progression
+    @plan/chordDuration - duration of chords
+    @phraselength - length of phrase
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (August 2015)

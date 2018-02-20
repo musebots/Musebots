@@ -1,0 +1,5 @@
+id ae_MethenyChordBOT
+mc_hostname localhost
+mc_listen_port 4747
+my_listen_port 7501
+output_channels 2

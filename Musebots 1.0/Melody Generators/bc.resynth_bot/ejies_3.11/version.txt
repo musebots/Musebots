@@ -1,0 +1,461 @@
+ejies - Version history
+
+
+*******************
+3.11: 25 March 2013
+
+prototypes folder renamed object-prototypes so it works properly with the packages format.
+
+
+*******************
+3.1: 27 February 2013
+
+Note:
+This version requires Max 6.1 or higher.
+
+Improvements:
+There's no installer anymore, ejies is package ready! Just drag the folder in one of the packages folders of Max.
+
+
+
+*******************
+3.0b2: X February 2012
+
+Note:
+This version no longer works with Max 5, sorry. It's time to upgrade ;-)
+
+Improvments:
+ej.function.js: using Max 6's MGraphics, you'll get at from 2.5x to 10x speed up! plus it's beautiful ;-)
+ej.led.js: using Max 6's MGraphics
+ej.numbox.js: using Max 6's MGraphics
+ej.mout~: uses a bigger window for nicer interpolation
+ej.dialog: now has a floating window which allows you to move the dialog around
+Installation.command: can take an argument from the command line so you can install ejies anywhere you want (#6)
+ej.vdb~ and ej.vdb-sig~: improved efficiency of the windowing (about 2 times faster)
+
+
+
+*******************
+3.0b1: 3 January 2012
+
+Improvments:
+updated Max installer to work properly with Max 5 and Max 6
+removed unused old Max 4 inspector patches...
+ej.function now has a pointsize attribute (Contribution of Emar Vegt, Thanks!).
+ej.function now has a drawtoedges attribute (Contribution of Ingo Randolf, Thanks!).
+
+Bug corrections:
+ej.cn.maxhelp fixed typo (Thanks Waj).
+
+
+
+*******************
+2.0.1: 27 January 2011
+
+Improvments:
+ej.mout~: offset 1/0 attribute (default 1): when offset is set to 0, the position 0 corresponds to the first speaker. When offset is set to 1, the position 0 corresponds to the center of the first two speakers.
+
+Bug corrections:
+ej.function.js is no longer confused by pasting a function in curve mode while zoom is set (Thanks Peimain).
+ej.function.js: flip and flip_x now works properly in curve mode (Thanks again Peiman).
+ej.function.js: nbfunctions is now an alias of nbfunction so ej.fplay synchronizes again.
+ej.fplay: synch message works fine now, requires Max 5.1.7 or higher (Thanks Emar)
+
+
+
+*******************
+2.0: 4 November 2009
+
+Improvments:
+Installation.command now stops for a while at the end of the installation so you can enjoy more.
+ej.function: displays proper errors in the Max window when you attempt to set the name of a function which is not a symbol
+ej.cc.js: some improvements to reduce the number of errors... it's an ongoing work, I guess.
+
+
+
+*******************
+2.0b4: 22 September 2009
+
+Bug corrections:
+ej.dialog no longer output text while pressing the cancel button
+stout~ doesn't complain anymore about ej.numbox (Thanks Jérome)
+ej.function.js removes properly all the unnecessary objects created after a read message (Thanks Mikhail)
+
+
+
+*******************
+2.0b3: 19 February 2009
+
+This version requires Max 5.0.0 or higher (5.0.5 or higher is highly recommended). It won't run with older versions (there's a version compatible with Max 4).
+
+Improvements:
+ej.function.js: uses attributes so it appears in the inspector
+ej.numbox.js: uses attributes so it appears in the inspector
+ej.lslide: outputs 0 instead of NaNs
+ej.lslide: reset message in case the filter exploded (which shouldn't happen anymore)
+ej.led.js: uses attribute so it appears in the inspector
+splay~: cleaned interface
+stout~: cleaned interface
+
+Bug correction:
+ej.function.js: fixed redrawing issue while sending points list in curve mode
+ej.cc.js: is more or less compatible with Max 5 (not ideal solution, but it doesn't screw up your patches anymore)
+
+Discontinued object:
+nine2X: is now dead. It has been obsolete since Max 4.3.0.
+
+
+
+*******************
+1.58: 4 March 2008
+
+Bug correction:
+ej.dialog: pressing escape key close the dialog and notify the second outlet
+ej.dialog: fix double output while pressing the Ok button with the mouse (Thanks Patrick)
+ej.function.js: fixed a bug while syncing 2 functions with curve mode (Thanks Nick)
+ej.function.js: fixed dump issue in curve mode
+
+Improvements:
+ej.ldrunk: interval attribute which outputs continuously (kinda integrated metro)
+ej.lslide: set message, slide_up slide_down minimum properly set to 1
+ej.led.js: toggle message for Kasper
+ej.function.js: curve addition (Many many thanks to Martin Robinson)
+ej.function.js: new clicksustain mode (if disable, you can't modify the sustain state via the mouse)
+ej.function.js: fixed bang outlet when edited the curve factor
+ej.fplay: curve addition, compatible with ej.function.js
+
+
+
+*******************
+1.57: 7 June 2007
+This version requires MaxMSP 4.5.6 or higher (MaxMSP 4.6.3 is highly recommended).
+
+Bug correction:
+ej.lquant: fixed integers arguments problem
+ej.lquant: fixed quantization with 1 (equals to rounding...)
+ej.numbox-keyboard.pat: now located in the ejies-obj folder, so it's found...
+ej.function.js: fixed redrawing bug introduced in 1.57b2
+ej.function.js: fixed dumpmatrix inconsistency
+
+Improvements:
+Installation.command: quiet mode (-q as argument), to it can be installed in non interactive mode (useful for network installation)
+AddShortcuts2Max.command: New shortcuts added: Show/Hide Object Palette (for Philippe), File Preferences
+AddShortcuts2Max.command: works with 4.6 too...
+ej.cc.help: now show how it works...
+ej.function.js: drawing methods updated (doesn't use 2 sketches anymore)
+ej.function.js: dumpmatrix argument is the name of a receive object
+ej.function.js: accept 2 dim matrix as input (jit_matrix message)
+ej.function.js: horizontal grid (grid message, gridstep_x/gridstep_y)
+ej.function.js: new file format to support horizontal grid
+ej.function-insp: grid and snap2grid have a umenu
+ej.function.js: progress bar (line message)
+ej.function.js: copyfunction works again (bug introduced in 1.57b5)
+ej.fplay: accept 2 dim matrix as input (jit_matrix message)
+ej.fplay: dumpmatrix as in ej.function.js
+ej.fplay: new file format to support horizontal grid
+ej.lchange: set message added for Roland...
+ej.lock.js: polling method to report lock change
+kd&u: default modifiers key is now 0 or 128 on windows
+ejies-overview: does not require Jitter to get the version number over network (use a java class now)
+stout~: finally the 0 dB is at 0 dB, not -0.6dB...
+java classes: now included as one jar files which contains classes and sources
+Installation.command: interactive installation works back
+ej.lslide: interval attribute which outputs continuously (kinda integrated metro)
+
+
+
+*******************
+1.56: 2 November 2006
+This version requires MaxMSP 4.5.6 or higher (compatible with MaxMSP 4.6 UB).
+
+New Java Externals:
+ej.dx2x: create a list from intervals
+ej.fplay: equivalent of ej.function.js without the drawing features
+ej.ftom: Frequency to MIDI (with tuning adjustment, works for lists)
+ej.jit.preview: (bpatcher) Patcher window for jitter (with slowing down)
+ej.l2buffer: fill a buffer~ with a list
+ej.ldrunk: more than a drunk for list
+ej.linterp: more than a list interpolator (up to 8 inputs)
+ej.lquant: Quantize a stream of number or a list
+ej.mtof: MIDI to Frequency (with tuning adjustment, works for lists)
+ej.urn: like urn, for larger random range
+ej.x2dx: get the interval between successive values of a list
+
+Also new:
+Collection of aqua sliders with prototypes
+java classes documented via DocFlex
+
+Improvements:
+Installation/Uninstallation: compatible with MaxMSP 4.5 and 4.6
+ej.function.js: fsaa can be enable/disable again
+ej.function.js: display with a bad argument won't cause problem
+ej.function.js: removeduplicate is now more efficient
+ej.function.js: drawing is really more efficient (~150 times faster when sending points coordinates with a dump)
+ej.function.js: notify psto less often (using the same Task technique as for drawing)
+ej.function.js: points with the same x position are now put in the "right" order (Thanks Henry)
+ej.function.js: new nbfunctions/syncfunctions/syncpoints method for the synchronisation with ej.fplay
+ej.function.js: able to read the new ej.fplay file format
+ej.function-insp: choice between domain/range and setdomain/setrange
+ej.lchange: dynamic assistance
+ej.lop: new operators (atodb, dbtoa)
+ej.lop: val @ttribute accept now more than one value
+ej.lop: accepts argument(s): operator followed by value(s)
+jit.fullscreen: new dumpout outlet (to get the mouse position for example)
+jit.fullscreen: fix a problem when mirror is on and the resolution of both screen is the same
+ej.lscale: help file math function corrected
+ej.lscale: outputmode to send the resulting list to a buffer
+ej.clip: outputmode to send the resulting list to a buffer
+ej.op.js: should be faster
+ej.function.js: new flip, flip_x and flip_y message
+ej.fplay.js: new flip, flip_x and flip_y message
+
+Bug correction:
+ej.ftom: fixed argument problem
+ej.function.js: dump/listdump with the send argument and a function containing spaces works now (Thanks Richard)
+ej.function.js: getzoom_x/getzoom_y now report correct values
+ej.function.js: addfunction problem fixed
+ej.function.js: line output works if there's only one point
+ej.lslide: slide_up/slide_down was not choose correctly (Thanks Elvio)
+ej.vdb~ and ej.vdb-sig~: windowing was wrong... and that's really bad... (Thanks José-Miguel)
+ej.lscale: was broken since 1.56b* (Thanks Antoine)
+
+
+
+*******************
+1.55: 21 Feb 2006
+This version requires MaxMSP 4.5.6 or higher.
+
+New Java Externals:
+ej.lchange: get the informationn of list change (works with big list, greater than 256 items)
+ej.lclip: constrains a list within a certain range
+ej.lop: list operators, works with big lists, greater than 256 items (Many thanks to Ben Nevile)
+ainej.lscale: maps input range of lists to output range
+ej.lslide: smooth-out changes in list
+ej.mmmm: faster replacement of ej.4m.js (especially using @mode list)
+
+Improvements:
+Installation.command: you can reply with lower case (y or n) to the installation questions
+ej.vdb~ and ej.vdb-sig~: even more faster, arguments allowed
+splay~: doesn't loose "signal connection style cable" anymore :-)
+
+Bug correction:
+ej.function.js: interpolation problem solved (Thanks Mikhail)
+
+
+
+*******************
+1.54: 21 Dec 2005
+This version requires MaxMSP 4.5.5 or higher.
+
+New:
+ej.led.js: new jsui... which does the same as the standard LED object / button object
+ej.line: multi-segment line
+prototypes: for pictctrl cancel and ok aqua button
+Uninstall.command: uninstaller utility (but why would you need that? :-) )
+
+Bug correction:
+ej.function.js: fix bug with if there's space in a name of function, while using read (Thanks Thomas)
+ej.function.js: redraw the function after a setdomain if the grid is enable (Thanks Thomas)
+ej.function.js: framecircle correctly redrawn after a setrange message
+ej.function.js: redraw after changing the domain (with setdomain) if the grid is on
+stout~: meter wasn't working in correctly in pre fader mode
+
+Improvements:
+ej.dialog: ignore click on the picture
+ej.function.js: new dumpmatrix message (send a jitter matrix to the dump outlet)
+ej.function.js: drawing stuff completely rewritten (using 2 sketch: displaying point values should be faster)
+ej.function.js: many code improvements
+ej.function.js: new sorting algorithm (using Insert or Quick sort), which are a lot faster
+ej.function.js: error checking of domain values (Thanks Thijs)
+ej.function.js: new normalize_x, normalize_y and normalize messages to scale the points to the domain/range.
+ej.function.js inspector: not allows you to use number as function name (which has never been possible)
+ej.numbox.js: new unselect message, which deselect other number boxes
+Installation.command: now use cp instead of CpMac... it should work on any macintosh now
+Installation.command: check for the C74 and Applications/MaxMSP 4.5 existence before installing
+jit.fullsreen: completly rewritten (should work whatever the position of the second display is)
+stout~: new wopen & wclose messages to avoid using pcontrol for that purpose
+stout~: float input define gain as dB
+splay~: new wopen & wclose messages to avoid using pcontrol for that purpose
+splay~: can now play sound files up to 24 channels
+
+
+
+*******************
+1.53: 1 Sep 2005
+This version requires MaxMSP 4.5.5 or higher.
+
+New:
+Installation.command: (MacOS X only), install ejies for you. You can "bypass" the installation of the externals/help files.
+
+Bug correction:
+ej.function.js: cursor option was global to all the ej.functions (Thanks Thomas)
+ej.function.js: recalled correctly name/domain/range of each functions while copying the object (Thanks Thomas)
+ej.function.js: read bug fixed (if a non valid file was open, the opendialog hack was not deleted)
+ej.function.js: {name of the function} {get message} doesn't produce any errormessage anymore
+splay~: message input optimisations (that means it should work now...)
+
+Improvements:
+ej.function.js: clear allows argument(s) to delete one or more point(s)
+ej.function.js: new mouseidle and mouse report feature (report [x, y, button, selected/idle point] to the dumpout outlet)
+ej.function.js: added some getthings (getnotifyrecalled, getmousereport)
+ej.function.js: new addpoints feature which allows you to add many points at the same time (That's for Thomas)
+ej.function.js: removedupplicate may be faster when there's a lot of points or when there's nothing to remove
+ej.numbox.js: draw optimisations (on loading)
+ej.numbox.js: new select message
+ej.numbox.js: now report the tab key (send select to the dumpout outlet)
+ej.numbox.js: keyboard input is quite invisible... the ej.numbox-keyboard.pat patch is created outside the patch, so it doesn't flash anymore.
+ej.numbox-insp: allows you to activate/deactivate the display of the border
+ej.numbox-insp: allows you to activate/deactivate the keyboard input
+ej.mout~: now support up to 16 channels, the position of 0 is now between the left and right front speakers.
+
+
+
+*******************
+1.52: 4 August 2005
+This version requires MaxMSP 4.5.5 or higher.
+
+New:
+ej.dialog: replacement for the dialog object
+ejies-shortcuts.txt: init file containing the ejies's shortcuts (new feature of 4.5.5)
+ejies-prototypes: contains the prototypes of the ejies's jsui (new feature of 4.5.5)
+ej.function.js: have now its own inspector! (new feature of 4.5.5)
+ej.numbox.js: have now its own inspector! (new feature of 4.5.5)
+
+Bugs corrections:
+ej.function.js: 5th outlet assistance correction (Thanks Oliv')
+ej.numbox.js: now rounding while using the set method
+jit.fullscreen: fsmenubar correctly defined (depending on the number of screen)
+splay~: inlet works now (connected to the sfplay~)
+
+Improvements:
+AddShortcuts2Max.command: adding shortcuts for New from Clipboard, Encapsulate and De-Encapsulate
+ej.function.js: domain has now 2 limits (like the range). If you specify the domain, with only one argument, it'll start at 0
+ej.function.js: Zoom features (zoom_x, zoom_y, getzoom_x, getzoom_y & zoomout messages)
+ej.function.js: bang, int/float, and next message are now in the high priority thread
+ej.function.js: draw improvements (the drawing operations appears less often)
+ej.function.js: object configuration is now saved in the patcher
+ej.function.js: cursor changes when you edit points (autocursor mode)
+ej.function.js: listdump set limit to 2047 points (the js array is limited to 4095 items, for being sent to an outlet)
+ej.function.js: new ghost & getghost messages to set/get the transparency of the background functions and the transparency of the grid
+ej.function.js: point display as framecircle when it's y value is equal to 0 (like the function object)
+ej.function.js: new bordersync feature wich keep the first and last points at the same y position (Thanks Vlad)
+ej.function.js: read and write function optimized (using the new hiddenconnect message)
+ej.function.js: increased the size of the object (2048*2048) if the fsaa is disabled ("nofsaa 1" message)
+ej.function.js: if notifyrecalled is on (in the inspector), output the message "recalled" when a preset is recalled from pattrstorage (That's for Ben)
+ej.numbox.js: object configuration is now saved in the patcher (you don't have to put the arguments in the inspector anymore)
+ej.numbox.js: keyboard input is now possible while the patch is locked, i.e non edit mode (an abstraction is automatically loaded and removed)
+ej.cc.js: new defaults message... use my favorites colors :-)
+splay~: dropfile added (you can drop a sound file on the window to select the sound you want to play)
+
+
+
+*******************
+1.51: 26 April 2005
+Bug corrections:
+ej.function.js: crash when using message all dump (Thanks Alexis)
+
+Improvements:
+ej.function.js: if the shift modifier is on you can't create a new point (it avoids to create a new point whhen you wanted to delete one but you are not enough precise with the mouse...)
+ej.function.js: better error messages
+ej.function.js: open dialog box when using message read or write without argument (scripting hack)
+ej.function.js: inserting (instead of adding at the end) a new function is now allowed
+ej.function.js: new messages for copy and paste of function (data or colors).
+splay~: english text...
+
+
+
+*******************
+1.5: 6 April 2005
+ej.function.js: multi bpf editor
+ejies-Overview: ... with version checker (Jitter and internet access required)
+
+Modifications:
+jit.fullscreen: correction of a stupid bug...
+
+
+
+*******************
+1.42: 14 Fev 2005
+ej.vdb-sig~: Variable delay without clicks or transposition (delay as signal)
+
+
+
+*******************
+1.41: 11 Fev 2005
+ej.vdb~: Variable delay without clicks or transposition
+
+Modifications:
+stout~: using umenu instead of ubumenu (better on windows)
+
+
+
+*******************
+1.4: 9 Fev 2005
+ej.cc.js: new JavaScript which allows you to change the objecs colors
+ej.cn.js: new JavaScript which allows you to change the name of a named object
+ej.cycle.js: New Javascript, does the same as cycle, but for any type of data
+ej.mout~: panpot on multiple output
+ejies-extensions.js: JavaScript library to reuse some functions
+
+Modifications:
+splay~: now using preload... and more...
+stout~: now initialized at 0dB, windows shortcuts compatible, display slider value (using ej.numbox)... and more...
+jit.fullscreen: not using third party externals anymore
+AddShortcuts2Max.command: no error message, the first time.
+ej.numbox: is now able to display -inf and +inf
+
+
+
+*******************
+1.31: Nov 2004
+AddShortcuts2Max.command: adding shortcuts for New Text File.
+
+
+
+*******************
+1.3: 21 Oct 2004
+help files updated
+ej.dn.js: new JavaScript object which display (open the patcher) a named object
+ej.op.js: new JavaScript object which open subpatcher
+AddShortcuts2Max.command: BASH script which add some shortcuts to Max (Set Origin, Restore Origin, Open As Text..., Save As..., Clear, Paste Replace, Lock Background, Redo). The script doesn't modifie Max itself. To revert you just need to remove the ~/Library/Preferences/com.cycling74.Max.plist file)
+ej.numbox.js: Jitter isn't required anymore (to hide the cursor while clicking)
+
+Bug corrections:
+ej.lock.js: bug correction (stupid ";")
+ej.numbox.js: bugs corrections (help patch also)
+jit.fullscreen: mousestate disable while working with only one screen
+
+
+
+*******************
+1.2: 14 Sep 2004
+ej.numbox.js: new JavaScript object (should be placed in C74:/jsui-library/)
+ej.lui.js: new JavaScript object which load a jsui object (ej.numbox.js for instance)
+ej.route.js: new JavaScript object which route
+
+Bug corrections:
+- jit.getparam: second input now accepts lists (can be used with ej.numbox.js)
+- stout~: optimisations (Max 4.5.2 required)
+- ej.nthru.js: correct argument bug
+- ej.lock.js: desactivated in runtime (Max 4.5.2 required, not tested with 4.5.2 final)
+
+
+
+*******************
+1.1: (Juilly 2004)
+New JavaScripts objects: ej.4m.js, ej.lock.js, ej.nthru.js
+Bug corrections:
+- jit.fullscreen: hide cursor when fullscreen mode is on, with 1 screen only.
+- kd&u: using modifiers second argument, modifiers is now 0 by default (Mac)
+- ptt: using modifiers second argument
+
+
+
+*******************
+1.0: Initial release (mars 2004)
+
+
+
+*******************
+Contact:
+http://support.e--j.com

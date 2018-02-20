@@ -1,0 +1,27 @@
+## version ##
+
+1.0
+
+## instrumentation ##
+
+none
+
+## platform ##
+
+built in Max 7 on Mac
+
+## behaviour ##
+
+communicates with the conductor
+
+## messages ##
+
+none
+
+## license ##
+
+creative commons share alike
+
+## credits ##
+
+matt horrigan 07/2017

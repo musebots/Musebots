@@ -1,0 +1,160 @@
+:root{
+	--background-color:pink;
+	--text-color:black;
+	--border-color:red;
+	--inset-color:yellow;
+	--on-color:green;
+}
+
+body{
+	background-color:var(--background-color);
+}
+
+button, div.instructions{
+	font-family:"Arial Black",arial,sans-serif;
+	color:var(--text-color);
+	font-weight:bold;
+	font-size:4em;
+	padding: 15px 15px;
+	border:15px solid var(--border-color);
+	margin:15px;
+
+	background-color:var(--inset-color);
+}
+
+button{
+	cursor: pointer;
+}
+
+div.instructions{
+	font-size:1em;
+}
+
+button:focus{
+	outline-color:white;
+	outline-width:5px;
+	outline-style:dotted;
+	border-color:var(--on-color);
+}
+
+button:hover{
+
+}
+
+/*
+	the slider / switch!
+
+	I WISH THERE WAS A WAY TO DETERMINE THESE VALUES SO THEY DEPEND ON EACH OTHER, INSTEAD OF JUST USING RAW NUMBERS!!!
+*/
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 108px;
+	height: 58px;
+
+
+	border:15px solid var(--border-color);
+	margin:15px;
+}
+
+.switch input {display:none;}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--text-color);
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 50px;
+	width: 50px;
+	left: 4px;
+	bottom: 4px;
+	background-color:var(--inset-color);
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color:var(--on-color);
+}
+
+input:focus + .slider { /* i'm not yet totally sure where this gets used */
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(50px);
+	-ms-transform: translateX(50px);
+	transform: translateX(50px);
+}
+
+/*
+
+	power button
+
+*/
+
+#inner {
+	height: 200px;
+	width: 200px;
+	background-color:var(--inset-color);
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin: -100px -100px -100px -100px;
+	overflow: hidden;
+}
+
+#outer {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	background-color:var(--border-color);
+	border-radius: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#outer:hover {
+	cursor: pointer;
+}
+
+.power {
+	color:var(--border-color);
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+
+	background-size:100px;
+	width:100px;
+	height:100px;
+
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select: none;
+
+	pointer-events: none;
+	margin: 50px 50px 50px 50px;
+}
+
+.material-icons.power{
+	font-size: 100px;
+}
+
+.on{
+	color:var(--on-color);
+}
+
+

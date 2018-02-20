@@ -1,0 +1,5 @@
+id mh_GuitarInputBOT_7475
+mc_hostname localhost
+mc_listen_port 7474
+my_listen_port 7475
+output_channels 2

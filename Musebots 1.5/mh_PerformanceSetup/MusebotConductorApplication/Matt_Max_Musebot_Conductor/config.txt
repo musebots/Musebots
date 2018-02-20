@@ -1,0 +1,7 @@
+id /agent/off_7477
+mc_hostname localhost
+mc_listen_port 7474
+my_listen_port 7477
+output_channels 2
+els 2
+hannels 2

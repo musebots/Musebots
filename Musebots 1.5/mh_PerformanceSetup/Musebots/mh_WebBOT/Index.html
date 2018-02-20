@@ -1,0 +1,399 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>TestBot</title>
+		<meta name="description" content="TestBot">
+
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+		
+		<link rel="stylesheet" type="text/css" href="style/default.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+		<script src="libraries/webmidi.js"></script>
+		
+		<script src="libraries/math/math.js"></script>
+		<script src="libraries/math/numeric.js"></script>
+		<script src="libraries/math/probability.js"></script>
+		<script src="libraries/math/curves/bezier.js"></script>
+		
+		<script src="libraries/theory/pitch.js"></script>
+			<!--Deals with pitch concepts like scale theory, tuning etc.-->
+		<script src="libraries/theory/rhythm.js"></script>
+			<!--Deals with rhythm concepts like tala, maximal evenness and the like.-->
+		<script src="libraries/theory/orchestration.js"></script>
+			<!--Makes orchestrational concepts like voices and instruments.-->
+		<script src="libraries/theory/composition.js"></script>
+			<!--Organizes rhythm and pitch concepts into playable units.-->
+
+		<script src="libraries/utilities/arrayUtilities.js"></script>
+
+		<script src="libraries/emulations/task.js"></script>
+
+		<script id="midi"> //initialize this with a midi toggle thing...
+			var output;
+
+			function initializeMIDI(){
+				WebMidi.enable(
+	 				function(){ 
+						output=WebMidi.getOutputByName("IAC Driver MIDI Bus 1");
+						input=WebMidi.getInputByName("IAC Driver MIDI Bus 2");
+
+						input.addListener('controlchange', 1, function(e) {
+							console.log("Control change value: " + e.value +" of type "+e.controller.number);
+						});
+
+					},
+		
+					function(error) {
+						console.log("Could not enable MIDI interface: "+error);
+					}
+				);
+			}
+
+			function midiNoteOut(pitch=60,velocity=70,channel=1,duration){
+				output.sendPitchBend(pitch%1,channel);
+
+				if(duration||duration==0){
+					output.playNote(Math.floor(pitch),channel,{duration:duration,velocity:velocity/127});
+				}else{
+					output.playNote(Math.floor(pitch),channel,{velocity:velocity/127});
+				}
+			}
+		</script>
+
+		<script id="audio">
+			function midiToFrequency(midiNote){
+
+				let theTuning=440;
+				let hertz = theTuning * Math.pow(2.0, (midiNote - 69)/12);
+
+				return hertz;
+			}
+
+			function makeDistortionCurve(amount){ // http://stackoverflow.com/a/22313408/1090298
+				var k = typeof amount === 'number' ? amount : 0,
+					n_samples = 44100,
+					curve = new Float32Array(n_samples),
+					deg = Math.PI/180,
+					i=0,
+					x;
+				for(;i<n_samples;++i){
+					x=i*2/n_samples-1;
+					curve[i]=(3+k)*x*20*deg/(Math.PI+k*Math.abs(x));
+				}
+				return curve;
+			};
+
+			class oneVoice{ //so, this is one voice of a polyphony; make the synthesizer class...
+				constructor(context) {
+					this.context = context;
+				}
+
+				init(){
+					this.oscillator=this.context.createOscillator();
+					this.gainNode=this.context.createGain();
+					this.distortion=context.createWaveShaper();
+
+					this.oscillator.connect(this.gainNode);
+					this.gainNode.connect(this.distortion);
+					this.distortion.connect(this.context.destination);
+					this.oscillator.type = 'sine';
+
+					this.distortion.curve=makeDistortionCurve(100);
+				}
+
+				play(value,time,velocity=70){
+					this.init();
+
+					this.oscillator.frequency.value = value;
+					this.gainNode.gain.setValueAtTime(0.001,this.context.currentTime);
+					this.gainNode.gain.exponentialRampToValueAtTime(velocity/127,this.context.currentTime+0.02);
+
+			 		this.oscillator.start(time);
+				}
+
+				stop(time){
+					this.gainNode.gain.exponentialRampToValueAtTime(0.001, time + 1);
+					this.oscillator.stop(time + 1);
+				}
+			}
+
+			class PolyphonicSynth{
+				constructor(context,numberOfVoices=4){
+					this.context=context;
+					this.voices=[];
+					for(var i=numberOfVoices-1;i>=0;i--){
+						this.voices[i]=new oneVoice(context);
+					}
+				}
+
+				noteOut(pitch=60,velocity=70,channel=1,duration){ //so far no support for velocity
+					if(channel>this.voices.length-1)return;
+	
+					let theVoice=this.voices[channel-1];
+					let now=context.currentTime;
+
+					if(velocity==0){
+						theVoice.stop(now);
+					}else{
+						let thePitch=midiToFrequency(pitch);
+						theVoice.play(thePitch,now,velocity);
+					}
+
+					if(duration!=undefined){
+						theVoice.stop(now+duration/1000);
+					}
+				}
+			}
+
+			let context = new(window.AudioContext||window.webkitAudioContext)();
+			let theSynth=new PolyphonicSynth(context);
+		</script>
+
+		<script id="flushing">
+			function flushAudio(){
+				console.log("flushed");
+				for(var channel=16;channel>0;channel--){
+					for(var pitch=127;pitch>=0;pitch--){
+						noteOut(pitch,0,channel);
+					}
+				}
+			}
+
+			function flushExternalMIDI(){ //CAN'T I USE FLUSHAUDIO FOR THIS?
+				for(var i=1;i<17;i++){
+					for(var pitch=127;pitch>=0;pitch--){
+						output.stopNote(pitch);
+					}
+				}
+			}
+		</script>
+
+		<script id='"interface'>
+			var usingMIDI=false;
+			var midiInitialized=false;
+			var startedAtSomePoint=false;
+			var noteOut=audioNoteOut; //IS THIS GLOBAL???
+
+			function audioNoteOut(pitch=60,velocity=70,channel=1,duration){
+				theSynth.noteOut(pitch,velocity,channel,duration);
+			}
+
+			function gogogo(){
+				stopstopstop();
+				startedAtSomePoint=true;
+				subsist();
+			}
+
+			function stopstopstop(){
+				if(!startedAtSomePoint)return;
+				
+				quotidian.cancel();
+				thePlayingPassage.stop();
+			}
+
+			function toggleMidi(){ //currently has a bug wherein things that were supposed to work don't
+				if(startedAtSomePoint){ //This is supposed to flush whatever was going on previously, but it's not really working	
+					//(usingMIDI) says if it's using midi; might have to introduce a delay to get it to flush properly				
+					flushAudio();
+				}
+
+				usingMIDI=usingMIDI?false:true;
+
+				var element = document.getElementById("contextualInstructions");
+
+				if(usingMIDI){
+					if(!midiInitialized){
+						midiInitialized=true;
+						initializeMIDI();
+					}
+					noteOut=midiNoteOut;
+					element.innerHTML = "Click the toggle to have it go back to using the browser audio. If you click it in the middle of a phrase, it won't send all the necessary noteoffs, which needs debugging.";
+				}else{
+					noteOut=audioNoteOut;
+					element.innerHTML = "Click the toggle to turn on MIDI. The current MIDI outlet it looks for is &#34;IAC Bus 1&#34;, so get out your DAW and have it listen to &#34IAC Bus&#34 channels 1-4.  MIDI out only works on Chrome or Opera.";				
+				}
+			}
+		</script>
+
+		<script id="consciousness">
+			var active=true;//do i even use this??
+
+			var theDensities={};
+			var theActivities={};
+			var theNotepools={};
+			function parse(object){
+				var theString=object[0];
+
+				console.log(theString);
+
+				var theData=theString.split(" ");
+				var theOSCDesignation=theData.shift()+"";
+				var theNameOfTheSendingBot=theData.shift()+"";
+
+				switch(theOSCDesignation){
+					case "/broadcast/density":
+						theDensities[theNameOfTheSendingBot]=theData;
+						break;
+					case "/broadcast/activity":
+						theActivities[theNameOfTheSendingBot]=theData;
+						break;
+					case "/broadcast/notepool":
+						theNotepools[theNameOfTheSendingBot]=theData;
+						break;				
+				}
+			}
+
+			function judge(){
+				//use a for-in loop to go over the object containing each of the understood properties
+				//and decide how to react to them; basically, reduce each to a single value that will influence this bot
+			}
+
+			function sense(){
+
+			}
+
+			function perceive(){
+
+			}
+
+			function ruminate(){
+
+			}
+
+			function think(){
+
+			}
+
+			function intuit(){
+
+			}
+
+			var thePlayingPassage;
+			var theOldPassage=new Passage();
+			var quotidian;
+
+			var hasBeenPlayedAtLeastOnce=false;
+
+			function subsist(){
+				quotidian=new Task(vascular,this);
+				quotidian.interval; //how often to check in with the world
+				quotidian.repeat();
+				function vascular(){
+					if(active){
+						if(hasBeenPlayedAtLeastOnce){ //to compensate for javascript's inability to keep perfect time
+							flushAudio();
+						}
+						hasBeenPlayedAtLeastOnce=true;
+
+						thePlayingPassage=theOldPassage;
+
+						/* This is where the "development" part of the developing variation takes place. */
+						var theCurrentDuration=thePlayingPassage.duration;
+						var theDesiredDuration=theCurrentDuration*0.75+theCurrentDuration*Math.random()*0.5; //this makes it tend toward getting slower...
+
+						//Passage.distortions.scramblePitches(thePlayingPassage);
+
+						Passage.utilities.distortAllPhrases(thePlayingPassage,Phrase.distortions.ornament);
+						var densityOfThisPassage=Passage.utilities.averageFromAllPhrases(thePlayingPassage,Phrase.analyses.noteDensity);
+						try{
+							socket.emit('message','/density '+densityOfThisPassage);
+						}catch(error){
+							console.log("I am not communicating.");
+						}
+
+						if(densityOfThisPassage<140){
+							thePlayingPassage=new Passage();
+						}
+
+						thePlayingPassage.normalizeDurationToFit(theDesiredDuration);
+						theOldPassage=thePlayingPassage.clone();
+
+						//I should have the passages flush their channel if need be, so i don't need the delay
+
+						arguments.callee.task.interval=thePlayingPassage.duration;
+							//RIGHT NOW THIS DELAY IS TOO LONG IF THE VALUE IS BIG!!!  WHY?!!!
+								//I need to properly flush upcoming phrases if they're not finished yet!!!
+									//That way i can get fully flexible time
+						thePlayingPassage.play();
+					}else{
+						arguments.callee.task.cancel();
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--This'll throw an error if I don't have node.js booted up.-->
+		<script src="http://127.0.0.1:8081/socket.io/socket.io.js"></script>
+		<script id="messages">
+			try{
+				socket = io.connect('http://127.0.0.1', { port: 8081, rememberTransport: false});
+				console.log('oi');
+				socket.on('connect', function() {
+					// sends to socket.io server the host/port of oscServer
+					// and oscClient
+					socket.emit('config',
+						{
+							server: { //messages going out from here
+								port: 3333,
+								host: '127.0.0.1'
+							},
+							client: { //messages coming into here
+								port: 3334,
+								host: '127.0.0.1'
+			 				}
+						}
+					);
+				});
+
+				socket.on('message', function(obj) {
+					console.log(obj);
+					parse(obj);
+				});
+			}catch(error){
+				console.log("I didn't connect to socket.io because "+error+".");
+				console.log("If you want to use the sockets, be sure to use the startup script and fire up node.js.  Otherwise the sockets aren't sending anything to the port.");
+			}
+		</script>
+		<!--
+			I don't even know if I want this stupid button anymore.
+			Well, it looks sort of like a sun, so I guess.
+			I've just gotta toggle the other tags when it gets clicked, so the interface all shows the same.
+		-->
+		<div id="outer">
+			<div id="inner">
+				<i class="material-icons power">power_settings_new</i>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var toggledOn=false;
+			$("#inner").click(function(){
+				$(".power").toggleClass("on");
+					toggledOn=toggledOn?false:true;
+
+					if(toggledOn){
+						gogogo();
+					}else{
+						stopstopstop();
+					}
+			})
+		</script>
+
+		<button onclick="gogogo()">Start playing!</button>
+		<button onclick="stopstopstop()">Stop playing!</button>
+		<label class="switch">
+			<input type="checkbox" onclick="toggleMidi()">
+			<div class="slider"></div>
+		</label>
+		<div class="instructions" id="contextualInstructions">
+			Click the toggle to turn on MIDI.  The current MIDI outlet it looks for is "IAC Bus 1", so get out your DAW and have it listen to "IAC Bus" channels 1-4.  MIDI out only works on Chrome or Opera.
+		</div>
+	</body>
+</html>

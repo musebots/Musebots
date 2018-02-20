@@ -1,0 +1,6 @@
+id mh_MidiBOT_7476
+mc_hostname localhost
+mc_listen_port 7474
+my_listen_port 7476
+output_channels 2
+s 2

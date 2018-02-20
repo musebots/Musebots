@@ -1,0 +1,38 @@
+## name ##
+
+ob_prockRockBeadsBot
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+drums beats
+
+type:
+    @beat
+
+## platform ##
+
+java
+
+## behaviour ##
+
+ollie beats
+
+## messages ##
+
+sends:
+    @intention
+
+receives:
+    @exiting
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+ollie bown nov 2015

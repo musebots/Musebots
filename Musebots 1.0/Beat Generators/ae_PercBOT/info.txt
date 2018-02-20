@@ -1,0 +1,39 @@
+## name ##
+
+ae_PercBOT
+
+## version ##
+
+06.26.15
+
+## instrumentation ##
+
+three part percussion, with modulated filter and delay
+
+type:
+    @beat
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+algorithmic generation of three percussion patterns.
+
+## messages ##
+
+sends:
+    @nothing
+
+receives:
+    @density (to mask onsets);
+    @exiting (to quit once xProducerBOT is done).
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (June 2015)

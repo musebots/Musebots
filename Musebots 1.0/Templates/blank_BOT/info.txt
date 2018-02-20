@@ -1,0 +1,39 @@
+## name ##
+
+blank_BOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+plays a simple triangle wave synth
+
+type:
+     @template
+     @synth
+
+## platform ##
+
+Max standalone, built from Max 7.3.1 on Macintosh.
+
+## behaviour ##
+
+demonstrates receiving and sending messages, and configuring a musebot.
+
+## messages ##
+
+sends:
+     @hdensity - probability of playing a note
+
+receives: 
+     @notepool - pool of MIDI pitches from which it can select
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (November 2016)

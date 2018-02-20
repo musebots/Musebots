@@ -1,0 +1,41 @@
+## name ##
+
+ae_newDroneBOT
+
+## version ##
+
+11.11.15
+
+## instrumentation ##
+
+Plays some high synth notes
+
+type:
+    @synth
+    @drone
+    @pad
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+requires another bot to generate either notepool or pitchclasspool
+
+## messages ##
+
+sends:
+    @intent/activityMask
+
+receives:
+    @notepool;
+    @intent/activityMask;
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+arne eigenfeldt (November 2015)

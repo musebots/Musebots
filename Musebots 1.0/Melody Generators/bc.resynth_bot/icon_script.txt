@@ -1,0 +1,3 @@
+open thispatcher
+
+appicon "Macintosh HD:/Users/bencarey/Dropbox/PROCJAM Musebots/Musebots/bc.resynth_bot/pm_scramble.icns"

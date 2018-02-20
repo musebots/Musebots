@@ -1,0 +1,43 @@
+## name ##
+
+PAP_CounterpointBot
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+type:
+    @melody
+    @synth
+
+## platform ##
+
+Max standalone, built from Max 7.0.3
+
+## behaviour ##
+
+internally generates:
+
+1. notepool (if no other bots are broadcasting notepool messages)
+2. structure (self-terminates once reaching the end)
+3. meter (length of each structural section)
+4. density
+5. rhythm
+
+## messages ##
+
+sends:
+    @meter
+
+receives:
+    @notepool
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+Paul Paroczai

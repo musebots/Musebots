@@ -1,0 +1,28 @@
+## name ##
+
+_derivationsBOT
+
+## version ##
+
+## instrumentation ##
+
+type:
+    @noise
+
+## platform ##
+
+Max standalone, built from Max 6.1.8 on Macintosh.
+
+## behaviour ##
+
+## messages ##
+
+sends:
+    @unknown
+
+receives:
+    @unknown
+
+## license ##
+
+## credits ##

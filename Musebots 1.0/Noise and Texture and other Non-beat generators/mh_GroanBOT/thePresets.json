@@ -1,0 +1,87 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u849001368",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"theDryBalance" : [ 0 ],
+					"theDecay" : [ 100 ],
+					"theDamping" : [  ],
+					"theRotation" : [  ],
+					"theFluctuation" : [  ],
+					"theSpeed" : [  ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"theDryBalance" : [ 1 ],
+					"theDecay" : [ 50 ],
+					"theDamping" : [  ],
+					"theRotation" : [  ],
+					"theFluctuation" : [  ],
+					"theSpeed" : [  ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"theDryBalance" : [  ],
+					"theDecay" : [  ],
+					"theDamping" : [  ],
+					"theRotation" : [ 0.7 ],
+					"theFluctuation" : [ 0.05 ],
+					"theSpeed" : [  ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"theDryBalance" : [  ],
+					"theDecay" : [  ],
+					"theDamping" : [  ],
+					"theRotation" : [ 0.87 ],
+					"theFluctuation" : [ 0.87 ],
+					"theSpeed" : [  ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"data" : 				{
+					"theDryBalance" : [  ],
+					"theDecay" : [  ],
+					"theDamping" : [ 0.05 ],
+					"theRotation" : [  ],
+					"theFluctuation" : [  ],
+					"theSpeed" : [ 30 ]
+				}
+
+			}
+,
+			"6" : 			{
+				"id" : 6,
+				"data" : 				{
+					"theDryBalance" : [  ],
+					"theDecay" : [  ],
+					"theDamping" : [ 0.95 ],
+					"theRotation" : [  ],
+					"theFluctuation" : [  ],
+					"theSpeed" : [ 500 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

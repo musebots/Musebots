@@ -1,0 +1,47 @@
+## name ##
+
+mh_BleepBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+two pulsing fm synths
+
+type:
+    @noise
+
+## platform ##
+
+Max standalone, built from Max 7.2.3 on Macintosh.
+
+If using source files, this bot requires the following Max package to be installed:
+
+    Zsa.descriptors
+    http://www.e--j.com/index.php/download-zsa/
+
+## behaviour ##
+
+bleeps fast
+
+## messages ##
+
+sends:
+    @hdensity
+    @arousal
+
+receives:
+    @notepool
+    @hdensity
+    @vdensity
+    @arousal
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+matt horrigan (May 2016)

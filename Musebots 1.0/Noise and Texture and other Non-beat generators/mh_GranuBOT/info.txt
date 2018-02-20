@@ -1,0 +1,46 @@
+## name ##
+
+mh_GranuBOT
+
+## version ##
+
+1.0
+
+## instrumentation ##
+
+3-voice granulator
+
+type:
+    @noise
+
+## platform ##
+
+Max standalone, built from Max 7.2.3 on Mac OS 10.10.5
+
+If using source files, this bot requires the following Max package to be installed:
+
+    Zsa.descriptors
+    http://www.e--j.com/index.php/download-zsa/
+
+## behaviour ##
+
+slurps, more or less chaotically
+
+## messages ##
+
+sends:
+    @valence (0. - 1.)
+    @arousal (0.-1.)
+    @centroid (freq)
+
+receives:
+    @valence
+    @arousal
+
+## license ##
+
+Creative Commons Share Alike
+
+## credits ##
+
+matt horrigan (June 2016)

@@ -1,0 +1,13 @@
+1, \; IR-L replace terrys_typing_cut-L.aif \; IR-R replace terrys_typing_cut-R.aif;
+2, \; IR-L replace Lindsay-St-Kitchen-Sweep-AKG-C1000s-10s.L.aif \; IR-R replace Lindsay-St-Kitchen-Sweep-AKG-C1000s-10s.R.aif;
+3, \; IR-L replace Lindsay-St-Bathroom-Sweep-AKG-C1000s-10s.L.aif \; IR-R replace Lindsay-St-Bathroom-Sweep-AKG-C1000s-10s.R.aif;
+4, \; IR-L replace Lindsay-St-Hall-Sweep-AKG-C1000s-10s.L.aif \; IR-R replace Lindsay-St-Hall-Sweep-AKG-C1000s-10s.R.aif;
+5, \; IR-L replace tyndall_bruce_ortf.L.aif \; IR-R replace tyndall_bruce_ortf.R.aif;
+6, \; IR-L replace mh3_000_ortf_48k-L.wav \; IR-R replace mh3_000_ortf_48k-R.wav;
+7, \; IR-L replace sportscentre_ortf.L.aif \; IR-R replace sportscentre_ortf.R.aif;
+8, \; IR-L replace stalbans_a_ortf.L.wav \; IR-R replace stalbans_a_ortf.R.wav;
+9, \; IR-L replace stalbans_b_ortf.L.wav \; IR-R replace stalbans_b_ortf.R.wav;
+10, \; IR-L replace sense-aware-clap-curtain-h4n-st-int.L.wav \; IR-R replace sense-aware-clap-curtain-h4n-st-int.R.wav;
+11, \; IR-L replace sense-aware-clap-glass-h4n-st-int.L.wav \; IR-R replace sense-aware-clap-glass-h4n-st-int.R.wav;
+12, \; IR-L replace SGHS-clap-h4n-st-int.L.wav \; IR-R replace SGHS-clap-h4n-st-int.R.wav;
+13, \; IR-L replace music-stand-1-h4n-mkh-416-cut.wav \; IR-R replace music-stand-1-h4n-mkh-416-cut.wav;
